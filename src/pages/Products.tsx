@@ -1,10 +1,11 @@
-import { Text } from '@chakra-ui/react';
+import BaseLayout from '../layouts/BaseLayout';
+import ProductTableWidget from '../widgets/ProductTableWidget';
 
 function ProductPage() {
   return (
-    <>
-      <Text>Hello products!!</Text>
-    </>
+    <BaseLayout>
+      <ProductTableWidget />
+    </BaseLayout>
   );
 }
 

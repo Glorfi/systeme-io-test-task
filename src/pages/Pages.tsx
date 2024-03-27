@@ -1,11 +1,12 @@
-import { Text } from '@chakra-ui/react';
+import BaseLayout from '../layouts/BaseLayout';
+import { PagesTableWidget } from '../widgets/PagesTableWidget';
 
-function PagesPage() {
+export const PagesPage = (): JSX.Element => {
   return (
-    <>
-      <Text>Hello Pages!</Text>
-    </>
+    <BaseLayout>
+      <PagesTableWidget />
+    </BaseLayout>
   );
-}
+};
 
 export default PagesPage;

@@ -1,10 +1,11 @@
-import { Text } from '@chakra-ui/react';
+import BaseLayout from '../layouts/BaseLayout';
+import PricePlanTableWidget from '../widgets/PricePlanTableWidget';
 
 function PricePlanPage() {
   return (
-    <>
-      <Text>Hello Price plans!!</Text>
-    </>
+    <BaseLayout>
+      <PricePlanTableWidget />
+    </BaseLayout>
   );
 }
 

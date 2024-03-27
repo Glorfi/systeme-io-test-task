@@ -1,4 +1,4 @@
-const APP_PATHS = {
+export const APP_PATHS = {
   MAIN: '/',
   PRODUCTS: '/products',
   PRICE_PLANS: '/priceplans',
