@@ -13,9 +13,4 @@
 npm i
 npm run dev
 ```
-Откройте еще один терминал в директории frontend.
-Выполните те же команды:
-```bash
-npm i
-npm run dev
-```
+
