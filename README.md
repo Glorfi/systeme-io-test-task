@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+## Тестовое задание для Systeme team
+### Описание
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Фронтенд разработан на React TypeScript с использованием Chakra UI, Redux Toolkit. Страницы отрисовывают соответствующие таблицы в зависимости от сущностей.
+В проекте можно:
+редактировать текстовые поля таблиц,
+фильтровать таблицы таблицы по текстовым полям
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Как запустить проект
+Чтобы запустить проект,
+выполните следующие команды:
+```bash
+npm i
+npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Откройте еще один терминал в директории frontend.
+Выполните те же команды:
+```bash
+npm i
+npm run dev
+```
