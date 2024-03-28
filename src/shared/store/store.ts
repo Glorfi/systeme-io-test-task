@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { pageRouter } from './pages/pageRouter';
-import { pricingPlanRouter } from './pages/pricingPlanRouter';
-import { productRouter } from './pages/productRouter';
+import { pageRouter } from '../../entities/page/pageRouter';
+import { pricingPlanRouter } from '../../entities/price-plan/pricingPlanRouter';
+import { productRouter } from '../../entities/product/productRouter';
 import { modalRouter } from './modals/modalRouter';
 
 export const store = configureStore({

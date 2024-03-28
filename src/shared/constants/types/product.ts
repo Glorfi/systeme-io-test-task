@@ -4,6 +4,7 @@ export interface IProduct {
   options: IOptions;
   active: boolean;
   createdAt: string;
+  [key: string]: string | number | boolean | IOptions
 }
 
 export interface IOptions {

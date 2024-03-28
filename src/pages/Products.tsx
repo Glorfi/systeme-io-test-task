@@ -1,9 +1,12 @@
-import BaseLayout from '../layouts/BaseLayout';
-import ProductTableWidget from '../widgets/ProductTableWidget';
+import BaseLayout from '../widgets/layouts/BaseLayout';
+import { ProductFilterWidget } from '../features/ProductFilterFilter';
+
+import ProductTableWidget from '../widgets/product/ProductTableWidget';
 
 function ProductPage() {
   return (
     <BaseLayout>
+      <ProductFilterWidget />
       <ProductTableWidget />
     </BaseLayout>
   );

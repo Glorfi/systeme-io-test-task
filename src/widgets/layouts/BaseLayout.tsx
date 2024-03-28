@@ -1,6 +1,5 @@
 import { Box } from '@chakra-ui/react';
-import Header from '../components/Header';
-import { EditTitlePopUp } from '../components/EditTitlePopUp';
+import Header from '../Header';
 
 function BaseLayout({
   children,

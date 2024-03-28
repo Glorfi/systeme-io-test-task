@@ -33,12 +33,11 @@ export const UniversalTable = (props: ITableProps): JSX.Element => {
   const [columns, setColumns] = useState<string[]>();
 
   useEffect(() => {
+    arr.length > 0 ? setColumns(Object.keys(arr[0])) : setColumns([]);
     const newArr = arr.map((item) => {
       return stringifyAndConvertDates(item);
     });
-    const keys = Object.keys(newArr[0]);
     setData(newArr);
-    setColumns(keys);
   }, [arr]);
 
   return (
@@ -71,7 +70,6 @@ export const UniversalTable = (props: ITableProps): JSX.Element => {
                     </Button>
                   </Td>
                 )}
-                {/* <Td onClick={() => buttonAction && buttonAction(arr[index])}>{button}</Td> */}
               </Tr>
             ))}
         </Tbody>

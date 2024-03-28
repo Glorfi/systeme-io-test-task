@@ -13,13 +13,13 @@ import {
   Input,
 } from '@chakra-ui/react';
 import { ChangeEvent, useEffect, useState } from 'react';
-import { useAppDispatch, useAppSelector } from '../app/store/hooks';
-import { MODALS } from '../app/constants/Modals';
-import { closeModal } from '../app/store/modals/modalRouter';
+import { useAppDispatch, useAppSelector } from '../utils/hooks';
+import { MODALS } from '../constants/Modals';
+import { closeModal } from '../store/modals/modalRouter';
 import { ActionCreatorWithPayload } from '@reduxjs/toolkit';
-import { IPage } from '../app/constants/types/pages';
-import { IProduct } from '../app/constants/types/product';
-import { IPricingPlan } from '../app/constants/types/pricingPlan';
+import { IPage } from '../constants/types/pages';
+import { IProduct } from '../constants/types/product';
+import { IPricingPlan } from '../constants/types/pricingPlan';
 
 interface IEditTitlePopUp {
   action:

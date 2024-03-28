@@ -2,7 +2,7 @@ import MainPage from '../../pages/Main';
 import PagesPage from '../../pages/Pages';
 import PricePlanPage from '../../pages/PricePlans';
 import ProductPage from '../../pages/Products';
-import { APP_PATHS } from '../constants/AppPaths';
+import { APP_PATHS } from '../../shared/constants/AppPaths';
 
 interface IAppRoutes {
   path: string;

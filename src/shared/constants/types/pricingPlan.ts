@@ -4,4 +4,5 @@ export interface IPricingPlan {
   active: boolean;
   createdAt: string;
   removedAt: string;
+  [key: string]: string | number | boolean;
 }

@@ -1,9 +1,11 @@
-import BaseLayout from '../layouts/BaseLayout';
-import PricePlanTableWidget from '../widgets/PricePlanTableWidget';
+import BaseLayout from '../widgets/layouts/BaseLayout';
+import { PricePlanFilter } from '../features/PricePlanFilter';
+import PricePlanTableWidget from '../widgets/price-plan/PricePlanTableWidget';
 
 function PricePlanPage() {
   return (
     <BaseLayout>
+      <PricePlanFilter />
       <PricePlanTableWidget />
     </BaseLayout>
   );

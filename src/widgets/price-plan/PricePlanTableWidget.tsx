@@ -1,9 +1,9 @@
-import { UniversalTable } from '../components/Table';
-import { useAppDispatch, useAppSelector } from '../app/store/hooks';
-import { openModal, setModalPayload } from '../app/store/modals/modalRouter';
-import { MODALS } from '../app/constants/Modals';
-import { EditTitlePopUp } from '../components/EditTitlePopUp';
-import { replaceItemPricingPlanList } from '../app/store/pages/pricingPlanRouter';
+import { UniversalTable } from '../../shared/ui/Table';
+import { useAppDispatch, useAppSelector } from '../../shared/utils/hooks';
+import { openModal, setModalPayload } from '../../shared/store/modals/modalRouter';
+import { MODALS } from '../../shared/constants/Modals';
+import { EditTitlePopUp } from '../../shared/ui/EditTitlePopUp';
+import { replaceItemPricingPlanList } from '../../entities/price-plan/pricingPlanRouter';
 
 function PricePlanTableWidget(): JSX.Element {
   const pricePlanList = useAppSelector((state) => state.pricingPlanList);

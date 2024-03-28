@@ -4,4 +4,5 @@ export interface IPage {
   active: boolean;
   updatedAt: string;
   publishedAt: string;
+  [key: string]: string | number | boolean;
 }
